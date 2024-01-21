@@ -14,6 +14,9 @@ use pocketmine\Server;
 use pocketmine\plugin\Plugin;
 use pocketmine\item\Item;
 
+use pocketmine\item\VanillaItems;
+use pocketmine\block\VanillaBlocks;
+
 use LC\LobbyCore;
 
 class HubCommand extends Command

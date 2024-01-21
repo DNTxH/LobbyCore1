@@ -40,16 +40,16 @@ class HubCommand extends Command
 
                 $item1 = VanillaBlocks::ENDER_CHEST()->asItem();
                 $item1->setCustomName("§r§bCosmetics§l");
-
+        
                 $item2 = VanillaBlocks::ANVIL()->asItem();
                 $item2->setCustomName("§r§cReport Player§l");
-
+       
                 $item3 = VanillaItems::COMPASS();
                 $item3->setCustomName("§r§aTeleporter§l");
-
+        
                 $item4 = VanillaItems::POPPED_CHORUS_FRUIT();
                 $item4->setCustomName("§r§bINFO §fUI");
-
+                
                 $item5 = VanillaItems::NETHER_STAR();
                 $item5->setCustomName("§r§5Lobby§l");
 

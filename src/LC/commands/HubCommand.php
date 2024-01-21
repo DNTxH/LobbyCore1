@@ -19,7 +19,6 @@ use LC\LobbyCore;
 
 class HubCommand extends Command
 {
-    private $plugin;
 
     public function __construct()
     {

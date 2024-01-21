@@ -20,7 +20,8 @@ class HubCommand extends Command
 
     public function __construct()
     {
-        parent::__construct("hub", "Teleport you to the server spawn!", null, ["hub", "lobby"]);
+        public function __construct() {
+        parent::__construct("hub", "Teleport you to the server spawn!", "/hub", ["spawn", "lobby", "back"]);
         $this->setPermission("lobbycore.command.hub");
     }
     public function execute(CommandSender $player, string $label, array $args)
@@ -50,5 +51,7 @@ class HubCommand extends Command
                 $player->getInventory()->setItem(8, $item5);
             }
         }
+        
     }
+        return true;
 }

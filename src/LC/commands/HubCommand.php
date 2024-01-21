@@ -14,15 +14,17 @@ use pocketmine\plugin\Plugin;
 use pocketmine\item\Item;
 use pocketmine\item\VanillaItems;
 use pocketmine\block\VanillaBlocks;
+use pocketmine\plugin\PluginOwned;
 
 use LC\LobbyCore;
 
-class HubCommand extends Command
+class HubCommand extends Command implements PluginOwned
 {
     private $plugin;
 
-    public function __construct()
+    public function __construct(LobbyCore $plugin))
     {
+        $this->plugin = $plugin;
         parent::__construct("hub", "Teleport you to the server spawn!", null, ["hub", "lobby"]);
         $this->setPermission("lobbycore.command.hub");
     }
@@ -57,5 +59,8 @@ class HubCommand extends Command
         $player->getInventory()->setItem(7, $item4);
         $player->getInventory()->setItem(8, $item5);
         
+    }
+    public function getOwningPlugin(): LobbyCore{
+        return $this->plugin;
     }
 }

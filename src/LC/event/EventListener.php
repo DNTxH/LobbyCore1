@@ -19,6 +19,7 @@ use pocketmine\Server;
 use pocketmine\player\Player;
 use pocketmine\utils\TextFormat as MG;
 use pocketmine\event\player\PlayerInteractEvent;
+use pocketmine\command\Command;
 
 use Vecnavium\FormsUI\Form;
 use Vecnavium\FormsUI\FormAPI;

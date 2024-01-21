@@ -81,7 +81,7 @@ class EventListener implements Listener
             LobbyCore::getInstance()->getUI()->getCosmetics($player);
         }
         if ($itn == "§r§cReport Player"){
-            $this->getServer()->getCommandMap()->dispatch($player, "report");
+            $this->plugin->getServer()->getCommandMap()->dispatch($player, "report");
         }
         if ($itn == "§r§aTeleporter") {
             LobbyCore::getInstance()->getUI()->getGames($player);
@@ -90,7 +90,7 @@ class EventListener implements Listener
             LobbyCore::getInstance()->getUI()->getInfo($player);
         }
         if ($itn == "§r§5Lobby"){
-            $this->getServer()->getCommandMap()->dispatch($player, "hub");
+            $this->plugin->getServer()->getCommandMap()->dispatch($player, "hub");
         }
     }
 }

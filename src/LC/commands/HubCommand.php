@@ -51,7 +51,7 @@ class HubCommand extends Command
                 $player->getInventory()->setItem(8, $item5);
             }
         }
-        return true;
+    
     }
         
 }
